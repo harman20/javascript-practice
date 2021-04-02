@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+
+function practice() {
+    return prompt("Type a letter: ");
+}
+
+function isVowel(character) {
+    switch (character) {
+        case "a":
+        case "A":
+        case "e":
+        case "E":
+        case "i":
+        case "I":  
+        case "o":
+        case "O":
+        case "u":
+        case "U": 
+            return true;
+        default:
+            return false;
+    }
+}
+var letter = practice();
+if (isVowel(letter)) alert("The letter is a vowel.");
+else alert("The letter is consonant.");
+
+</script>
+</head>
+</html>
