@@ -1,0 +1,44 @@
+<html>
+<head>
+<script type="text/javascript">
+    function ShowPassword(chkShowPassword) {
+        
+        var txtPassword = document.getElementById("txtPassword");
+        var txtTemp;
+ 
+        
+        if (chkShowPassword.checked) {
+            
+            if (txtPassword.nextSibling != null) {
+                txtPassword.parentNode.removeChild(txtPassword.nextSibling);
+            }
+ 
+            
+            txtTemp = document.createElement('INPUT');
+            txtTemp.setAttribute('TYPE', 'TEXT');
+            txtTemp.setAttribute('VALUE', txtPassword.value);
+ 
+           
+            txtTemp.onchange = function () {
+                txtPassword.value = this.value;
+            };
+            txtPassword.parentNode.insertBefore(txtTemp, txtPassword.nextSibling);
+ 
+            
+            txtPassword.style.display = "none";
+        } else {
+           txtTemp = txtPassword.nextSibling;
+ 
+           
+            txtPassword.value = txtTemp.value;
+ 
+            
+            txtTemp.parentNode.removeChild(txtTemp);
+ 
+           
+            txtPassword.style.display = "block";
+        }
+    };
+</script>
+</head>
+</html>
