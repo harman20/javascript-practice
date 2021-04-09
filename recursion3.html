@@ -1,0 +1,19 @@
+<html>
+<script>
+function pow(x,y) {
+
+    if(y==1)
+    {
+        return x;
+    }
+    else
+    {
+        return x*pow(x,y-1);
+    }
+    
+}
+var a=prompt("enter no");
+var b= prompt("enter power");
+alert(pow(a,b));
+</script>
+</html>

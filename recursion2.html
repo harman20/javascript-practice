@@ -1,0 +1,19 @@
+<html>
+<script>
+
+function power(a, n) 
+{
+   if (n==0) 
+   {
+    return 1;
+    }
+  else 
+  {
+    return a*power(a,n-1);
+  }
+}
+let b = prompt("Enter a number");
+document.write(power(4, 2));
+
+</script>
+</html>

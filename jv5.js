@@ -1,6 +1,4 @@
-<html>
-<head>
-<script>
+
 
 let firstArray=[1,2,5];
 let secondArray=[3,4,6];
@@ -21,6 +19,3 @@ let middleIndex = ((0+thirdArray.length)/2);
 console.log(middleIndex); //3
 console.log(thirdArray[middleIndex]); //4
 
-</script>
-</head>
-</html>

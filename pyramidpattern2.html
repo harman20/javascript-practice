@@ -1,0 +1,22 @@
+<html>
+<script>
+function pyr(num) {
+
+    for(var i=0;i<num;i++)
+    {
+        for(var k=num;k>i+1;k--)
+        {
+            document.write("&nbsp;");
+        }
+
+        for(var j=0;j<=i;j++)
+        {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    
+}
+var val=10;
+pyr(val);
+</script>

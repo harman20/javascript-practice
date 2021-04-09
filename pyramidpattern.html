@@ -1,0 +1,21 @@
+<html>
+<script>
+
+    let n=10; 
+    let str = "";
+
+    for (let i=1;i<=n;i++) {
+     
+      for (let j=n;j>i;j--) {
+        str += " ";
+      }
+     
+      for (let k=0;k<i*2-1;k++) {
+        str += "*";
+      }
+      str += "<br>";
+    }
+    document.write(`<pre>${str}</pre>`);
+  </script>
+
+</html>
